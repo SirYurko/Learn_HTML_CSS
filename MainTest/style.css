@@ -3,8 +3,16 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+#mainh1 {
   text-align: center;        /* вирівнювання по центру */
+  font-weight: normal;       /* визначає товщину шрифта*/
+  
+  
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;          /* Встановлює висоту рядка */
 }
 
 #RobotoMono {
@@ -13,4 +21,41 @@ h1 {
   color: darkorange;
   font-size: 20px;
   text-align: left;           /* вирівнювання по лівому краю */
+}
+
+#blockquote{
+  background-color: burlywood;
+}
+
+#span1{
+  color: brown;
+  font-size: large;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow: auto;
+}
+code {
+  background-color: #3d1f1f;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 90%;
+  color: #ddd;
+}
+
+h1{
+  font-weight: 200;
+}
+ul{
+  background-color:aliceblue;
+}
+
+ol{
+  background-color: aquamarine;
+}
+
+dl{
+  background-color: cornflowerblue;
 }
