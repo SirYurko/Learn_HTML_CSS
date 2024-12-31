@@ -110,3 +110,85 @@ summary:hover {
     color: #007BFF;
 }
 
+#textstyle {
+    /* text-transform: capitalize; кожне слово з великої букви */
+    text-transform: uppercase ; /*Всі слова у верхньому регістрі  */
+    /* letter-spacing: 5px; відстань між літерами */
+    text-decoration: overline; 
+    text-indent: 10px; /* абзац */
+    letter-spacing: 5px;
+}
+
+
+#textstyle2{
+    /* width: 1000px; */
+    border: solid 2px;
+    white-space: nowrap; /* не переносить рядок */
+    white-space: pre; /* переноситься тільки при розриві рядка */
+    white-space: normal;
+    text-indent: 10px;
+    font-style: italic;
+    max-width: 1000px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.box-item {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    border: 2px solid #fff;
+}
+
+.child {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#overflowdiv {
+    border: solid 2px black;
+    margin: 5px;
+    max-width: 300px;
+    height: 80px;
+    overflow: auto;
+    
+}
+
+#wrapper {
+    margin: 20px;
+    background-color: #77937036;
+    position: relative;
+}
+
+.firstblock {
+    background-color:#ffc40051 ;
+    font-size: 30px;
+    border: dashed 1px;
+    position: relative;
+    top: 20px;
+}
+.secondtblock {
+    background-color:#00ff7751 ;
+    font-size: 20px;
+    border: dashed 1px;
+    position: absolute;
+    left: 300px
+}
+.thirdblock {
+    background-color:#ff00a651 ;
+    font-size: 20px;
+    border: dashed 1px;
+    position: fixed;
+    top: 0;
+    
+}
+.fourthblock {
+    background-color:#2e00fb51 ;
+    font-size: 30px;
+    border: dashed 1px;
+    position: sticky;
+    top: 0;
+}
