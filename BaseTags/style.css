@@ -192,3 +192,17 @@ summary:hover {
     position: sticky;
     top: 0;
 }
+
+#parentDiv {
+    font-size: 25px;
+    width: 50vw; /* Ширина елемента буде 50% від ширини вікна */
+    height: 20vw; /* Висота елемента буде 20% від ширини вікна */
+    background-color: lightblue;
+}
+
+#childDiv {
+    width: 50%; /* 50% від ширини батьківського елемента */
+    height: 50%; /* 50% від висоти батьківського елемента */
+    background-color: coral;
+    font-size: 0.5em;
+}
