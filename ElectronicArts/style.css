@@ -20,15 +20,15 @@ body {
 }
 
 .Header-Profile-Help-EA-Nav-Icon-Question {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url(media/question-svgrepo-com.svg) no-repeat center;
     background-size: contain;
 }
 
 .Header-Profile-Help-EA-Nav-Icon-EA {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url(media/ea-svgrepo-com.svg) no-repeat center;
     background-size: contain;
 }
@@ -39,9 +39,47 @@ body {
 }
 
 .Header-Menu-Nav-Burger {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url(media/3844442-dot-menu-more-vertical_110310.svg) no-repeat center; 
     background-size: contain;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+.Header-Menu-Nav-Title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Header-Menu-Nav-List {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    font-family:  "Quicksand", serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Header-Wallpaper {
+    position: relative;
+}
+
+.Header-Wallpaper-Main-Picture {
+    max-width: 100%;
+    height: auto;
+    clip-path: inset(0px 0px 260px 0px); /* обрізка знизу */
+    }
+
+.Header-Button-Play-Now {
+    position: absolute; /* позиціонуємо відносно контейнера */
+    bottom: 350px; /* регулюй відстань від низу */
+    left: 75%; /* зміщення вправо */
+    padding: 25px 50px;
+    background-color: #ff4747;
+    color: white;
+    border-radius: 3px;
+}
