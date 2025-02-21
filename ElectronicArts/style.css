@@ -71,11 +71,15 @@ body {
 .Header-Wallpaper-Main-Picture {
     max-width: 100%;
     height: auto;
-    clip-path: inset(0px 0px 300px 0px); /* обрізка знизу */
-    }
+    object-fit: cover; /* забезпечує належне масштабування */
+    display: block; /* щоб уникнути небажаних відступів */
+    margin: 0 auto; /* центрує картинку */
+}
+
 
 .Header-Wallpaper-Space-Button-Play-Now {
     position: absolute;
+    top: 150px;
     bottom: 550px; /* регулюй відстань від низу */
     left: 65%; /* зміщення вправо */
     display: flex;
@@ -91,3 +95,74 @@ body {
     border: none;
     font-size: 16px;
 }
+
+.Main-Title-Text {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.Main-Picture-Collection-Featured-Games {
+    display: grid;
+    grid-template-columns: repeat(3, 325px); /* 3 стовпчики, кожен займає однакову частку простору */
+    grid-template-rows: repeat(2, 325px);  /* 2 рядки, кожен з фіксованою висотою 200px (за прикладом) */
+    gap: 30px; /* відступи між блоками */
+    max-width: 55%; /* наприклад, обмежуємо ширину контейнера */
+    margin: 0 auto; /* центровання контейнера */
+    
+}
+
+.Main-Picture-Collection-Featured-Games-Blocks {
+    width: 330px;
+    height: 330px;
+    background-color: gray;
+}
+
+#Dragon-Age {
+    background-image: url('media/Gallery/dragon-age-key-art-16x9.jpg.adapt.crop1x1.767p.jpg');
+    background-size: cover;  
+}
+
+#FC25 {
+    background-image: url('media/Gallery/fc-25-key-art.png.adapt.crop1x1.767p.png');
+    background-size: cover;
+}
+
+#F1 {
+    background-image: url('media/Gallery/F1.jpeg');
+    background-size: cover;
+}
+
+#WRC {
+    background-image: url('media/Gallery/WRC.jpeg');
+    background-size: cover;
+}
+
+#SIMS4 {
+    background-image: url('media/Gallery/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg');
+    background-size: cover;
+}
+
+#Apex {
+    background-image: url('media/Gallery/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg');
+    background-size: cover;
+}   
+
+.Main-Buttons {
+    text-decoration: none;
+    background: transparent;
+    border: rgb(0, 0, 0) solid;
+    border-width: 2px;
+    padding: 16px 24px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#Main-Buttons-Latest-Games {
+    margin: 40px auto;
+    display: block;
+}
+
+/**/
